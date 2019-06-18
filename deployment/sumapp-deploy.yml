@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: $appname
-        image: $targetrepo/$appname
+        image: $targetrepo/$appname:$BUILD_NUMBER 
         imagePullPolicy: Always
         ports:
         - containerPort: 9080       
